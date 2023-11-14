@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  <!-- PORTFOLIO HEADER -->
+  <div id="portfolio-header">
+    <div id="portfolio-header-image-container">
+      <img src="./assets/images/mypic.png" class="portfolio-header-image">
+      <a class="no-underline" target="_blank" href="https://juliegoncharov.com">
+        <!-- <span class="image-caption"></span> -->
+      </a>
+    </div>
+
+    <div id="portfolio-header-text-container">
+        <div class="header-text">
+<!--              <span class="main-title">Welcome!</span>-->
+          <div class="body-text">
+Julie Goncharov is a post-doctoral researcher at the Seminar for English Philology and the University Center for Text Structures at the Georg-August University in Göttingen.
+Her main areas of interest are semantics/pragmatics of natural languages and philosophy of language.
+Her current projects revolve around questions concerning agency, intentions, reference, and their representations in language.
+          </div>
+        </div>
+        <a class="button" id="my-work-link">
+          <span class="button-text">Recent projects</span>
+          <image src="./assets/images/arrowright.png" class="right-arrow-icon"/>
+        </a>
+    </div>
+  </div>
+  
+  <!-- ABOUT SECTION -->
+  <div id="about-section">
+    <span class="subheader-text">About</span>
+    <div class="about-section-content">
+      <div class="body-text">
+        Julie received her doctoral degree in theoretical linguistics from  the University of Toronto in 2015.
+        Since then, she have worked as a post-doctoral researcher at the Hebrew University of Jerusalem, Georg-August University of Göttingen, and University of Tromsø.
+        She is now a post-doctoral fellow in a DFG-funded project <a href="">Action Sensitivity in Grammar</a> at the Georg-August University in Göttingen.
+      </div>
+  <div id="about-section">
+    <span class="subheader-text">Full CV</span>
+    <div class="about-section-content">
+      <div class="body-text">
+        Julie's full CV can be found <a href="./docs/Goncharov_cv_022023.pdf">here</a> (updated Februeary 2023).
+      </div>
+      <a href="https://spe-uca.sciencesconf.org/resource/page/id/10" class="button" id="my-publication-link">
+        <span class="button-text">See Julie's interview to OASIS3 (2023)</span>
+        <image src="./assets/images/arrowright.png" class="right-arrow-icon"/>
+      </a>
+    </div>
+  </div>
+
+  {{ content }}
+
+
+</div>
