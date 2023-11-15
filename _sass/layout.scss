@@ -64,3 +64,28 @@ a.icon-link:hover {
   margin: 0;
   transform: rotate(15deg);
 }
+
+/* Footer */
+.footer-nav .page-link { color: #111; line-height: 1.5; }
+.footer-nav .page-link:not(:last-child) { margin-right: 20px; }
+
+/* Publications */
+.pubitem {
+  margin: 2em 0;
+  line-height: 1em;
+}
+
+.pubtitle {
+  margin-bottom: 0.5em;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.pubauthors,
+.pubinfo {
+  font-size: 75%;
+  margin-bottom: 0.75em;
+}
+.publinks {
+  font-size: 75%;
+}

@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="page">
+
+  <h1 class="mt-4 publication-title">{{ page.title }}</h1>
+
+  <div class="publication-authors">
+    {{ page.authors }}
+  </div>
+
+  <div class="publication-info">
+    {{ page.publication }}, {{ page.year}}
+  </div>
+
+  {{ content }}
+
+  <h2 id="downloads">Downloads</h2>
+  <p>
+  {% if page.pdf %}
+    <a href="{{ "/" | relative_url }}/assets/docs/{{ page.pdf }}" target="_blank"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
+    {% endif %}
+    {% if page.slides %}
+    <a href="{{ "/" | relative_url }}/assets/docs/{{ page.slug }}_slides.pdf" target="_blank"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
+    {% endif %}
+    {% if page.bib %}
+    <a href="{{ "/" | relative_url }}/assets/docs/{{ page.slug }}.bib" target="_blank"><i class="far fa-file-alt"></i> BibTex</a>&nbsp;&nbsp;
+    {% endif %}
+    {% if page.doi %}
+    <a href="{{ page.doi }}"><i class="fas fa-external-link-alt" target="_blank"></i> DOI</a>&nbsp;&nbsp;
+    {% endif %}
+  </p>
+</div>

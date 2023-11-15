@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "In Search of Reference: The case of the Russian adjectival intensifier ‘samyj’"
 date:   2023-11-12 16:22:41 -0500
 categories: jekyll update
 ---
