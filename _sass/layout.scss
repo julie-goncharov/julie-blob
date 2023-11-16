@@ -68,6 +68,12 @@ a.icon-link:hover {
 /* Footer */
 .footer-nav .page-link { color: #111; line-height: 1.5; }
 .footer-nav .page-link:not(:last-child) { margin-right: 20px; }
+.footer-col-3 {
+    width: calc(35% - (30px /2));
+}
+.footer-col-wrapper {
+    font-size: 13px;
+}
 
 /* Publications */
 .pubitem {

@@ -6,8 +6,11 @@ publication: The first Berkeley Meeting. Michigan Slavic Publications.
 year: 2015
 pdf: Goncharov_2015many_FASL.pdf
 #doi: http://dx.doi.org/XX.XXX/
+bib: Goncharov_2015many_FASL.pdf
 ---
-Introduction
+<br>
+## Introduction
+
 The ambiguity of quantity expressions, such as many in (1), is
 traditionally identified as the distinction between ‘weak’ and ‘strong’
 determiners, e.g. Milsark 1977, Barwise and Cooper 1981, Partee 1989,

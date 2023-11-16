@@ -7,7 +7,9 @@ year: 2015
 #doi: http://dx.doi.org/XX.XXX/
 pdf: Goncharov_2015doubling_LI.pdf
 ---
-1 Introduction
+<br>
+## Introduction
+
 The goal of this squib is to provide new empirical evidence in support
 of the view that there is more than one type of split construction (see
 (1)) and that the types should be distinguished on the basis of their

@@ -4,9 +4,11 @@ title: In Search of Reference. The case of the Russian adjectival intensifier 's
 authors: Julie Goncharov
 publication: dissertation, University of Toronto.
 year: 2015
-doi: http://dx.doi.org/XX.XXX/
+doi: http://doi.org/10.48550/arXiv.2209.10625
 pdf: Goncharov_2015thesis.pdf
+slides: Goncharov_2015thesis.pdf
 ---
+<br>
 ## Abstract
 
 In Search of Reference

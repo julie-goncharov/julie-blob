@@ -9,13 +9,10 @@ permalink: /publications/
 {% for pub in publications %}
 <div class="pubitem">
   <div class="pubtitle">
-    {{ pub.title }}
+            {{ pub.year}}, {{ pub.title }}
   </div>
   <div class="pubauthors">
-    {{ pub.authors }}
-  </div>
-  <div class="pubinfo">
-    {{ pub.publication }}, {{ pub.year}}
+    {{ pub.authors }}, {{ pub.publication }}
   </div>
   <div class="publinks">
   {% if pub.pdf %}
@@ -23,7 +20,7 @@ permalink: /publications/
     </a>
     {% endif %}
     &nbsp;&nbsp;
-    <a href="{{ pub.url | relative_url }}"><i class="fas fa-arrow-right"></i> Project Page</a>
+    <a href="{{ pub.url | relative_url }}"><i class="fas fa-arrow-right"></i> Abstract</a>
   </div>
 </div>
 {% endfor %}

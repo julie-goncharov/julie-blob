@@ -2,48 +2,42 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-        <div class="footer-col">
-            <ul class="contact-list">
-                <li class="p-name"> QUICK LINKS </li>
-                <li>
-                    <div class="footer-nav">
-                    {%- for path in page_paths -%}
-                      {%- assign my_page = site.pages | where: "path", path | first -%}
-                      {%- if my_page.title -%}
-                      <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-                      {%- endif -%}
-                    {%- endfor -%}
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-col footer-col-2">
-            <ul class="social-media-list">
-            </ul>
-        </div>
-
-      <div class="footer-col footer-col-3">
-          <ul class="contact-list">
-              {%- if site.email -%}
-              <li>
-                  <a class="u-email" href="mailto:{{ site.email }}">
-                      <img src="{{ "/" | relative_url }}/assets/images/mail.svg">
-                  </a>
-              </li>
+    <div style='display: inline-block; width:100%;'>
+        <div style='float: left; font-family: Georgia;'>
+            <div class="footer-col-wrapper">
+                 QUICK LINKS
+            </div>
+            <div class="footer-nav">
+            {%- for path in page_paths -%}
+              {%- assign my_page = site.pages | where: "path", path | first -%}
+              {%- if my_page.title -%}
+              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
               {%- endif -%}
-              <li class="p-name">
+            {%- endfor -%}
+            </div>
+        </div>
+        <div style='float: right; font-family: Georgia; font-size: 12px;'>
+            <div style='display: flex;'>
+                {%- if site.email -%}
+                <a class="u-email" href="mailto:{{ site.email }}">
+                    <img src="{{ "/" | relative_url }}/assets/images/mail.svg">
+                </a>
+                {%- endif -%}
+            </div>
+            <div style=' clear; both; color: #828282;'>
                 &copy;&nbsp;
-              {%- if site.author -%}
-                {{ site.author | escape }}
-              {%- else -%}
-                {{ site.title | escape }}
-              {%- endif -%}. ALL RIGHTS RESERVED.
-              </li>
-          </ul>
-      </div>
-    </div>
+                {%- if site.copyright -%}
+                {{ site.copyright | escape }}
+                {%- endif -%}
+                &nbsp;
+                {%- if site.author -%}
+                  {{ site.author | escape }}
+                {%- else -%}
+                  {{ site.title | escape }}
+                {%- endif -%}&nbsp;ALL RIGHTS RESERVED.
+            </div>
+        </div>
+  </div>
 
   </div>
 
