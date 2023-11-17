@@ -16,11 +16,10 @@ permalink: /publications/
   </div>
   <div class="publinks">
   {% if pub.pdf %}
-    <a href="{{ "/" | relative_url }}/assets/docs/{{ pub.pdf}}" target="_blank"><i class="far fa-file-pdf"></i> PDF
-    </a>
+    <a href="{{ "/" | relative_url }}/assets/docs/{{ pub.pdf}}" target="_blank" rel="noopener noreferrer">PDF</a>
     {% endif %}
     &nbsp;&nbsp;
-    <a href="{{ pub.url | relative_url }}"><i class="fas fa-arrow-right"></i> Abstract</a>
+    <a href="{{ pub.url | relative_url }}"><i>Abstract</i></a>
   </div>
 </div>
 {% endfor %}
