@@ -115,7 +115,6 @@ a.icon-link:hover {
     font-size: 13px;
 /*    color: #454545; */
     margin-top: 30px;
-    text-align: justify;
 }
 
 .project td {
@@ -134,8 +133,8 @@ table {
 .proj-left {
     width: 20%;
     min-width: 120px !important;
-/*    background-color: #0080ff; */
-    padding: 20px;
+/*    background-color: #0080ff;
+    padding: 20px;  */
     text-align: center;
     color: #151515;
     font-family: Dinthin;
@@ -148,8 +147,8 @@ table {
     padding: 0px;
 }
 .proj-right {
-/*    padding: 25px !important; */
-    background-color: #f6f4f4;
+/*    padding: 25px !important;
+    background-color: #f6f4f4; */
     height: auto;
     width: 85%;
     margin-bottom: 20px;
@@ -164,6 +163,9 @@ table {
 .proj-title {
     font-weight: 800;
     margin-top: 10px;
-    margin-bottom: 3px;
+    font-size: 20px;
 }
-
+.proj-colspan {
+    background-color: #f6f4f4;
+    text-align: justify;
+}
