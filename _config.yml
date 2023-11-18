@@ -30,6 +30,7 @@ markdown: kramdown
 theme: minima
 plugins:
 #  - jekyll-feed
+  - jekyll-scholar
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -46,3 +47,24 @@ collections:
   publications:
     output: true
     permalink: /:collection/:name
+  projects:
+    output: true
+    permalink: /:collection/:name
+#scholar:
+#  style: assets/bibliography/mycslfile.csl
+#  locale: en
+
+#  sort_by: year
+#  order: descending
+
+#  source: _bibliography
+#  bibliography: references
+#  bibliography_template: bibtemplate
+
+#  replace_strings: true
+
+#  details_dir:    bibliography
+#  details_layout: bibtex.html
+#  details_link:   Details
+
+#  query: "@*"

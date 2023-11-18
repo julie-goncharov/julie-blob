@@ -1,0 +1,17 @@
+---
+layout: default
+title: Projects
+---
+
+<div class="page">
+  <h1 class="mt-4 publication-title">{{ page.title }}</h1>
+  <div class="publication-authors">{{ page.authors }}</div>
+  <div class="publication-info">{{ page.publication }}, {{ page.year}}</div>
+  <div class="publication-teaser">
+    <img
+      src="{{ "/" | relative_url }}/assets/images/{{ page.logo }}"
+      alt="project teaser"
+    />
+  </div>
+  {{ content }}
+</div>

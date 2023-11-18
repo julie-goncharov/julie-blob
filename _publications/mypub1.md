@@ -28,3 +28,4 @@ di↵erent phenomena in Russian and analyzing samyj in terms of sam misses impor
 generalizations about the structure and functioning of DPs. Three main constructions are
 examined, in which samyj is used with (a) demonstratives (Dem+samyj), (b) pronouns
 (Pron+samyj), and (c) gradable properties to form superlatives (self -superlatives).
+
