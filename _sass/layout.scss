@@ -40,6 +40,11 @@
   flex-direction: column;
   gap: 34px;
 }
+.subheader-text {
+  font-size: 20px;
+  font-weight: 700;
+/*  text-align: center; */
+}
 
 /* Icons */
 
@@ -168,4 +173,21 @@ table {
 .proj-colspan {
     background-color: #f6f4f4;
     text-align: justify;
+}
+.proj-card{
+    font-size: 13px;
+    text-align: justify;
+}
+.proj-card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    font-size:13px;
+}
+.proj-card-title {
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
