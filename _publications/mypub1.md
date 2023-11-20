@@ -28,4 +28,11 @@ di↵erent phenomena in Russian and analyzing samyj in terms of sam misses impor
 generalizations about the structure and functioning of DPs. Three main constructions are
 examined, in which samyj is used with (a) demonstratives (Dem+samyj), (b) pronouns
 (Pron+samyj), and (c) gradable properties to form superlatives (self -superlatives).
-
+\@incollection{Egre2007-EGRSIA-2,
+    \author = {Paul Egr\'e},
+    \booktitle = {Saying, Meaning and Referring: Essays on Fran\c{c}ois Recanati's Philosophy of Language},
+    \editor = {Mar\'{i}a Jos\'e Fr\'{a}polli},
+    \publisher = {Palgrave-Macmillan},
+    \title = {Semantic Innocence and Substitutivity},
+    \year = {2007}
+\}
