@@ -65,8 +65,9 @@ layout: default
   <div class="bibtex_template" style="display: none;">
     <ul> <li>
       <span class="if title" style="font-weight: bold;">
-          <span class="title"></span>,
-        </a>
+          <a class="bibtexVar" href="{{ "/" | relative_url }}assets/docs/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
+              <span class="title"></span>,
+          </a>
       </span>
       <div class="if author">
         <span class="author"></span>
@@ -80,16 +81,17 @@ layout: default
         <span class="if year"><span class="year"></span>.</span>
         <span class="if note"><span class="note"></span></span>
         <span class="if url">
-          <a class="bibtexVar" href="+URL+" extra="url">
+          <a class="bibtexVar" href="+URL+" extra="url" target='_blank' rel="noopener noreferrer">
             [url]
           </a>
         </span>
-        <span class="if title">
-          <a class="bibtexVar" href="http://www.website.com/~demo/papers/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">[pdf]
+<!--        <span class="if title">
+          <a class="bibtexVar" href="{{ "/" | relative_url }}assets/docs/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">[pdf]
           </a>
         </span>
+-->
         <span class="if doi">
-            <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi">
+            <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi" target='_blank' rel="noopener noreferrer">
               [doi]
             </a>
         </span>
