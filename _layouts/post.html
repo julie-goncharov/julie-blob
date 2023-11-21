@@ -93,26 +93,27 @@ layout: default
               [doi]
             </a>
         </span>
-        <a class="bibtexVar" role="button" data-toggle="collapse"
+<!--        <a class="bibtexVar" role="button" data-toggle="collapse"
        href="#bib+BIBTEXKEY+" aria-expanded="false"
        aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY" bibtexjs-css-escape>
           [bib]
         </a>
-
-        <details>
-            
-            <summary>Click for [BibTex]</summary>
-            
-            <pre><span class="bibtexraw noread"></span></pre>
+-->
+        <details><summary><a role="button" aria-controls="bib+BIBTEXKEY+"  extra="BIBTEXKEY" bibtexjs-css-escape>[BibTex]</a></summary>
+            <div class="bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">  <div class="well">
+                    <pre><span class="bibtexraw noread"></span></pre>
+                </div>
+            </div>
         </details>
+
       </div>
-      <div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+<!--      <div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
           <div class="well">
             <pre><span class="bibtexraw noread"></span></pre>
           </div>
       </div>
       <div style="display:none"><span class="bibtextype"></span></div>
-
+-->
     </li></ul>
   </div>
   
