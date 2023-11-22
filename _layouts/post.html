@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
-<div class="page">
+<!--<div class="page">
 <h1 class="mt-4 publication-title">{{ page.title }}</h1>
 <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+-->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script  type="text/javascript" src="{{ '/assets/js/bibtex_js.js' | relative_url }}"></script>
 
@@ -47,11 +48,13 @@ layout: default
 -->
 <!-- This file is for testing the most simple use case of bibtex_js -->
 
-<a name="top"></a>
+<!--<a name="top"></a>-->
 <!--<h1 class="header">Your Publications</h1>-->
+<h1 class="mt-4">Publications</h1>
 
 <div class="bibtex_structure">
-  <div class="group year" extra="DESC number">
+  <div class="sort year" extra="DESC number">
+<!--      <div class="group year" extra="DESC number"> -->
 <!--        <a href="#top" style="display: inline"><em>(Top of the page)</em></a>
         <div style="padding-bottom:10px;"></div>
 -->
@@ -62,7 +65,49 @@ layout: default
 </div>
 
 <div id="bibtex_display">
-  
+
+<div class="bibtex_template" style="display: none;">
+    <div class="pubitem">
+      <div class="pubtitle">
+          <span class="if year"><span class="year"></span></span>, <span class="if title"><span class="title"></span></span>
+      </div>
+      <div class="pubauthors">
+          <span class="author"></span>
+          ,
+          <span class="if journal"><em><span class="journal"></span></em>,</span>
+          <span class="if publisher"><em><span class="publisher"></span></em>,</span>
+          <span class="if booktitle">In <em><span class="booktitle"></span></em>,</span>
+          <span class="if address"><span class="address"></span>,</span>
+          <span class="if month"><span class="month"></span>,</span>
+          <span class="if year"><span class="year"></span>.</span>
+          <span class="if note"><span class="note"></span></span>
+      </div>
+      <div class="publinks">
+          <a class="bibtexVar" href="{{ "/" | relative_url }}assets/docs/+BIBTEXKEY+.pdf" extra="BIBTEXKEY" target='_blank' rel="noopener noreferrer">PDF
+          </a>
+          &nbsp;&nbsp;
+          <span class="if url">
+            <a class="bibtexVar" href="+URL+" extra="url" target='_blank' rel="noopener noreferrer">
+              WEB
+            </a>
+          </span>
+          &nbsp;&nbsp;
+          <span class="if doi">
+              <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi" target='_blank' rel="noopener noreferrer">
+                DOI
+              </a>
+          </span>
+          &nbsp;&nbsp;
+          <details><summary  class="display: inline"><a aria-controls="bib+BIBTEXKEY+"  extra="BIBTEXKEY" bibtexjs-css-escape>[BibTex]</a></summary>
+               <div class="bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">  <div class="well">
+                       <pre><span class="bibtexraw noread"></span></pre>
+                   </div>
+               </div>
+           </details>
+      </div>
+    </div>
+</div>
+<!--
   <div class="bibtex_template" style="display: none;">
     <ul> <li>
       <span class="if title" style="font-weight: bold;">
@@ -91,7 +136,7 @@ layout: default
           </a>
         </span>
 -->
-        <span class="if doi">
+<!--        <span class="if doi">
             <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi" target='_blank' rel="noopener noreferrer">
               [doi]
             </a>
@@ -102,7 +147,7 @@ layout: default
           [bib]
         </a>
 -->
-        <details><summary><a role="button" aria-controls="bib+BIBTEXKEY+"  extra="BIBTEXKEY" bibtexjs-css-escape>[BibTex]</a></summary>
+<!--        <details><summary><a role="button" aria-controls="bib+BIBTEXKEY+"  extra="BIBTEXKEY" bibtexjs-css-escape>[BibTex]</a></summary>
             <div class="bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">  <div class="well">
                     <pre><span class="bibtexraw noread"></span></pre>
                 </div>
@@ -117,7 +162,7 @@ layout: default
       </div>
       <div style="display:none"><span class="bibtextype"></span></div>
 -->
-    </li></ul>
+<!--    </li></ul>
   </div>
   
 </div>
@@ -127,4 +172,4 @@ layout: default
 <!-- Latest compiled and minified JavaScript
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 -->
-</div>
+<!--</div>-->
