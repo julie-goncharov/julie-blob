@@ -69,7 +69,9 @@ layout: default
 <div class="bibtex_template" style="display: none;">
     <div class="pubitem">
       <div class="pubtitle">
-          <span class="if year"><span class="year"></span></span>, <span class="if title"><span class="title"></span></span>
+          <span class="if year"><span class="year"></span></span>
+          ,
+          <span class="if title"><span class="title"></span></span>
       </div>
       <div class="pubauthors">
           <span class="author"></span>
@@ -98,10 +100,9 @@ layout: default
               </a>
           </span>
           &nbsp;&nbsp;
-          <details><summary  class="display: inline"><a aria-controls="bib+BIBTEXKEY+"  extra="BIBTEXKEY" bibtexjs-css-escape>[BibTex]</a></summary>
-               <div class="bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">  <div class="well">
+          <details><summary style="cursor: pointer;"><a aria-controls="bib+BIBTEXKEY+"  extra="BIBTEXKEY" bibtexjs-css-escape>[BibTex]</a></summary>
+               <div class="bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
                        <pre><span class="bibtexraw noread"></span></pre>
-                   </div>
                </div>
            </details>
       </div>
