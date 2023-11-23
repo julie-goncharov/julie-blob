@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Publications1
+title: Publications
 permalink: /publications/
 usebibtex: true
 ---
