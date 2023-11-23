@@ -9,6 +9,10 @@
           {%- if jekyll.environment == 'production' and site.google_analytics -%}
           {%- include google-analytics.html -%}
           {%- endif -%}
+<!-- Enabling https on a Jekyll site -->
+        {% if site.production == true %}
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        {% endif %}
  <!-- for BibTex support -->
           {% if page.usebibtex %}
 <!--          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
