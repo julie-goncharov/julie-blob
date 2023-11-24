@@ -42,7 +42,7 @@ usebibtex: true
 <!--          <a class="bibtexVar" href="{{ "/" | relative_url }}assets/docs/+BIBTEXKEY+.pdf" extra="BIBTEXKEY" target='_blank' rel="noopener noreferrer">PDF
           </a>
 -->
-          <span class="if note">
+<!--          <span class="if note">
             <a class="bibtexVar" href="{{ "/" | relative_url }}assets/docs/+NOTE+" extra="note" target='_blank' rel="noopener noreferrer">
               PDF
             </a>
@@ -60,11 +60,39 @@ usebibtex: true
               </a>
           &nbsp;&nbsp;
           </span>
+-->
+<table style="border: none;" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+          <td style="width: 15%;border:none;padding: 0px;">
+                      <span class="if note">
+            <a class="bibtexVar" href="{{ "/" | relative_url }}assets/docs/+NOTE+" extra="note" target='_blank' rel="noopener noreferrer">
+              PDF
+            </a>
+          </span>
+                      <span class="if url">
+            <a class="bibtexVar" href="+URL+" extra="url" target='_blank' rel="noopener noreferrer">
+              WEB
+            </a>
+          </span>
+          <span class="if doi">
+              <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi" target='_blank' rel="noopener noreferrer">
+                DOI
+              </a>
+          </span>
+          </td>
+            <td style="border:none;padding: 0px;">
           <details><summary style="cursor: pointer;"><a aria-controls="bib+BIBTEXKEY+"  extra="BIBTEXKEY" bibtexjs-css-escape>[BibTex]</a></summary>
                <div class="bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
                        <pre><span class="bibtexraw noread"></span></pre>
                </div>
            </details>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
       </div>
     </div>
 </div>
