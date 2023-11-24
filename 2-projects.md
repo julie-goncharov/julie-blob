@@ -5,10 +5,11 @@ permalink: /projects/
 ---
 
 <h1 class="mt-4">Projects</h1>
+<!--<table class="project" cellspacing="0" cellpadding="0">-->
+  <table class="proj-card" cellspacing="0" cellpadding="0">
+    <tbody>
 {% assign projects = site.projects | sort: 'num' | reverse %}
 {% for proj in projects %}
-<table class="project" cellspacing="0" cellpadding="0">
-    <tbody>
         <tr>
             <td class="proj-left" align="center" valign="top">
              <a target='_blank' href="{{ proj.ref }}" title="Show Project">
@@ -19,20 +20,26 @@ permalink: /projects/
              </a>
             </td>
             <td class="proj-right">
-                <div class="alignright">
+<!--                <div class="alignright">
                     <a class="button" target='_blank' href="{{ proj.ref }}" title="Show Project">
                         <img style="width: 20px; height: 20px; border: none;" src="{{ "/" | relative_url }}assets/images/arrowright.png" />
                     </a>
                 </div>
+-->
                 {{ proj.period }}
                 <div class="proj-title">{{ proj.title }}</div>
-            </td>
+                   <div>{{ proj.excerpt }}</div>
+             <a target='_blank' href="{{ proj.ref }}" title="Show Project">
+                    [WEBSITE]
+             </a>
+           </td>
         </tr>
-        <tr>
+<!--        <tr>
             <td colspan=2 class="proj-colspan">
                 {{ proj.excerpt }}
-            </td>
+             </td>
         </tr>
+-->
+{% endfor %}
     </tbody>
 </table>
-{% endfor %}
