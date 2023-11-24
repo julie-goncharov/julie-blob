@@ -5,7 +5,7 @@ permalink: /publications/
 usebibtex: true
 ---
 <!--
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script  type="text/javascript" src="{{ '/assets/js/bibtex_js.js' | relative_url }}"></script>
 -->
 <bibtex src="{{ "/" | relative_url }}assets/docs/mybibliography.bib"></bibtex>
@@ -36,24 +36,30 @@ usebibtex: true
           <span class="if address"><span class="address"></span>,</span>
           <span class="if month"><span class="month"></span>,</span>
           <span class="if year"><span class="year"></span>.</span>
-          <span class="if note"><span class="note"></span></span>
+<!--          <span class="if note"><span class="note"></span></span> -->
       </div>
       <div class="publinks">
-          <a class="bibtexVar" href="{{ "/" | relative_url }}assets/docs/+BIBTEXKEY+.pdf" extra="BIBTEXKEY" target='_blank' rel="noopener noreferrer">PDF
+<!--          <a class="bibtexVar" href="{{ "/" | relative_url }}assets/docs/+BIBTEXKEY+.pdf" extra="BIBTEXKEY" target='_blank' rel="noopener noreferrer">PDF
           </a>
+-->
+          <span class="if note">
+            <a class="bibtexVar" href="{{ "/" | relative_url }}assets/docs/+NOTE+" extra="note" target='_blank' rel="noopener noreferrer">
+              PDF
+            </a>
           &nbsp;&nbsp;
+          </span>
           <span class="if url">
             <a class="bibtexVar" href="+URL+" extra="url" target='_blank' rel="noopener noreferrer">
               WEB
             </a>
-          </span>
           &nbsp;&nbsp;
+          </span>
           <span class="if doi">
               <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi" target='_blank' rel="noopener noreferrer">
                 DOI
               </a>
-          </span>
           &nbsp;&nbsp;
+          </span>
           <details><summary style="cursor: pointer;"><a aria-controls="bib+BIBTEXKEY+"  extra="BIBTEXKEY" bibtexjs-css-escape>[BibTex]</a></summary>
                <div class="bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
                        <pre><span class="bibtexraw noread"></span></pre>
