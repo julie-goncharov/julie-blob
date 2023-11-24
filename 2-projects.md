@@ -6,10 +6,10 @@ permalink: /projects/
 
 <h1 class="mt-4">Projects</h1>
 <!--<table class="project" cellspacing="0" cellpadding="0">-->
-  <table class="proj-card" cellspacing="0" cellpadding="0">
-    <tbody>
 {% assign projects = site.projects | sort: 'num' | reverse %}
 {% for proj in projects %}
+  <table class="proj-card" cellspacing="0" cellpadding="0">
+    <tbody>
         <tr>
             <td class="proj-left" align="center" valign="top">
              <a target='_blank' href="{{ proj.ref }}" title="Show Project">
@@ -40,6 +40,6 @@ permalink: /projects/
              </td>
         </tr>
 -->
-{% endfor %}
     </tbody>
 </table>
+{% endfor %}
