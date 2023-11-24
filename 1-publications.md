@@ -37,8 +37,29 @@ usebibtex: true
           <span class="if month"><span class="month"></span>,</span>
           <span class="if year"><span class="year"></span>.</span>
 <!--          <span class="if note"><span class="note"></span></span> -->
+         <span class="if note">
+            <a class="bibtexVar" href="{{ "/" | relative_url }}assets/docs/+NOTE+" extra="note" target='_blank' rel="noopener noreferrer">
+              [PDF]
+            </a>
+          </span>
+          <span class="if url">
+            <a class="bibtexVar" href="+URL+" extra="url" target='_blank' rel="noopener noreferrer">
+              [WEB]
+            </a>
+          </span>
+          <span class="if doi">
+              <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi" target='_blank' rel="noopener noreferrer">
+                [DOI]
+              </a>
+          </span>
       </div>
       <div class="publinks">
+          <details><summary style="cursor: pointer;"><a aria-controls="bib+BIBTEXKEY+"  extra="BIBTEXKEY" bibtexjs-css-escape>[BibTex]</a></summary>
+               <div class="bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+                       <pre><span class="bibtexraw noread"></span></pre>
+               </div>
+           </details>
+ 
 <!--          <a class="bibtexVar" href="{{ "/" | relative_url }}assets/docs/+BIBTEXKEY+.pdf" extra="BIBTEXKEY" target='_blank' rel="noopener noreferrer">PDF
           </a>
 -->
@@ -61,6 +82,7 @@ usebibtex: true
           &nbsp;&nbsp;
           </span>
 -->
+<!--
 <table style="border: none;" cellspacing="0" cellpadding="0">
     <tbody>
         <tr>
@@ -91,8 +113,7 @@ usebibtex: true
         </tr>
       </tbody>
     </table>
-
-
+-->
       </div>
     </div>
 </div>
