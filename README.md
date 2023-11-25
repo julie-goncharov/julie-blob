@@ -47,7 +47,7 @@ from the scratch
 	>origin git@gh_julie:julie-goncharov/julie-blob.git (fetch)
  	>	
 	>origin git@gh_julie:julie-goncharov/julie-blob.git (push)	
-* rm *		
+* rm -rf *		
 * rm .DS_Store .gitignore		
 * git pull origin main		
 * git branch		
