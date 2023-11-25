@@ -7,9 +7,9 @@ usebibtex: true
 <!--
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script  type="text/javascript" src="{{ '/assets/js/bibtex_js.js' | relative_url }}"></script>
--->
-<bibtex src="{{ "/" | relative_url }}assets/docs/mybibliography.bib"></bibtex>
 
+<bibtex src="{{ "/" | relative_url }}assets/docs/mybibliography.bib"></bibtex>
+-->
 <h1 class="mt-4">Publications</h1>
 
 <div class="bibtex_structure">
@@ -18,7 +18,7 @@ usebibtex: true
   </div>
 </div>
 
-<div id="bibtex_display">
+<div id="bibtex_display"></div>
 
 <div class="bibtex_template" style="display: none;">
     <div class="pubitem">
@@ -114,7 +114,7 @@ usebibtex: true
       </tbody>
     </table>
 -->
-      </div>
+  </div>
     </div>
 </div>
 
