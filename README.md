@@ -5,6 +5,20 @@ from the scratch
 
 [instructions on GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll)
 
+### Create a repository
+
+1. In the upper-right corner of any page, select , then click New repository.
+2. Repository Name: julie-blob
+
+### On local computer
+
+1. git init julie-blob
+2. cd julie-blob
+3. echo "# julie-blob" >> README.md
+4. git init
+
+
+
 1. Install ASDF ( https://asdf-vm.com/guide/getting-started.html )		
 git clone https://github.com/excid3/asdf.git ~/.asdf		
 git clone https://github.com/excid3/asdf.git ~/.asdf		
