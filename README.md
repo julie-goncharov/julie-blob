@@ -57,7 +57,8 @@ from the scratch
 * asdf install ruby 3.1.4		
 * asdf global ruby 3.1.4		
 * ruby -v		
-	>ruby 3.1.4p223 (2023-03-30 revision 957bb7cb81) [x86_64-darwin21]	
+	>ruby 3.1.4p223 (2023-03-30 revision 957bb7cb81) [x86_64-darwin21]
+### install Jekyll and bundler
 * gem install jekyll bundler		
 * gem install bundler:2.4.22		
 * bundler install		
