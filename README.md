@@ -144,3 +144,20 @@ usebibtex: true
   </div>
 </div>
 ```
+* Using NOTE field for PDF file
+* mybibliography.bib
+  
+  	**note = {Goncharov_2020oblige_FDSL.pdf},**
+
+```
+  @incollection{gon20a,	
+	address = {Berlin},
+	author = {Goncharov, Julie},
+	booktitle = {Advances in formal {S}lavic linguistics 2017},
+	editor = {Franc Maru{\v s} and Petra Mi{\v s}ma{\v s} and Rok {\v Z}aucer},
+	pages = {51--73},
+	publisher = {Language {S}cience {P}ress},
+	title = {Whom to oblige?},
+	note = {Goncharov_2020oblige_FDSL.pdf},
+ 	year = {2020}}
+```
