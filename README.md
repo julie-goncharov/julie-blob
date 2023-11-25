@@ -61,7 +61,8 @@ from the scratch
 ### install Jekyll and bundler
 * gem install jekyll bundler		
 * gem install bundler:2.4.22		
-* bundler install		
+* bundler install
+### Run server  
 * bundler exec jekyll serve
    
 http://127.0.0.1:4000/julie-blob/
