@@ -144,8 +144,9 @@ usebibtex: true
   </div>
 </div>
 ```
-* Using NOTE field for PDF file
-* mybibliography.bib
+### Using NOTE field for PDF file
+
+*  mybibliography.bib
   
   	**note = {Goncharov_2020oblige_FDSL.pdf},**
 
