@@ -64,3 +64,23 @@ from the scratch
    
 http://127.0.0.1:4000/julie-blob/
   >press ctrl-c to stop.  
+
+## Using BibTex-js (bibliography)
+
+[Wiki for BibTex-js](https://github.com/pcooksey/bibtex-js/wiki)
+
+* vi _includes/head.html
+  >```<!-- Enabling https on a Jekyll site -->```
+  
+        {% if site.production == true %}
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        {% endif %}
+``` <!-- for BibTex support -->```
+
+          {% if page.usebibtex %}
+          <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          <script  type="text/javascript" src="{{ '/' | relative_url }}assets/js/bibtex_js.js"></script>
+
+          <bibtex src="{{ "/" | relative_url }}assets/docs/mybibliography.bib"></bibtex>
+          {% endif %}
+
