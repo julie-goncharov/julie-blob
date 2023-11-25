@@ -39,8 +39,9 @@ from the scratch
 ### recreate folder  
 * rm -rf julie-blob
 * Download ZIP form GitHub and uncompress		
-* cd julie-blob		
-* git init		
+* cd julie-blob-main		
+* git init
+* Configure SSH	
 * git remote add origin git@gh_julie:julie-goncharov/julie-blob.git		
 * git remote -v		
 	>origin git@gh_julie:julie-goncharov/julie-blob.git (fetch)
