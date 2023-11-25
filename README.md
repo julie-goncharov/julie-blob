@@ -100,7 +100,7 @@ usebibtex: true
   </div>
 </div>
 
-<div id="bibtex_display">
+<div id="bibtex_display"></div>
 
 <div class="bibtex_template" style="display: none;">
     <div class="pubitem">
@@ -133,12 +133,14 @@ usebibtex: true
                 [DOI]
               </a>
           </span>
-      </div>
-      <div class="publinks">
+    </div>
+    <div class="publinks">
           <details><summary style="cursor: pointer;"><a aria-controls="bib+BIBTEXKEY+"  extra="BIBTEXKEY" bibtexjs-css-escape>[BibTex]</a></summary>
                <div class="bibtexVar" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
                        <pre><span class="bibtexraw noread"></span></pre>
                </div>
            </details>
+   </div>	
+  </div>
 </div>
 ```
