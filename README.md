@@ -1,5 +1,8 @@
 # How-To build Julie-blob with Jekyll and BibTex-js		
-from the scratch		
+from the scratch	
+## Setting up a GitHub Pages with Jekyll
+[instructions on GitHub] (https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll)
+
 1. Install ASDF ( https://asdf-vm.com/guide/getting-started.html )		
 git clone https://github.com/excid3/asdf.git ~/.asdf		
 git clone https://github.com/excid3/asdf.git ~/.asdf		
