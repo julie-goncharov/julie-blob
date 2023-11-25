@@ -2,72 +2,49 @@
 layout: default
 ---
 
-<div>
-<!--  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
--->
   <!-- PORTFOLIO HEADER -->
   <div id="portfolio-header">
     <div id="portfolio-header-image-container">
-      <img src="./assets/images/mypic.png" class="portfolio-header-image">
+      <img src="{{ '/' | relative_url }}/assets/images/{{ page.mypicture }}" class="portfolio-header-image">    
     </div>
 
     <div id="portfolio-header-text-container">
-          <div>
-Julie Goncharov is a post-doctoral researcher at the Seminar for English Philology and the University Center for Text Structures at the Georg-August University in Göttingen.
-Her main areas of interest are semantics/pragmatics of natural languages and philosophy of language.
-Her current projects revolve around questions concerning agency, intentions, reference, and their representations in language.
-          </div>
-        <a class="page-link" href="{{ "/" | relative_url }}/projects">
-          <span>My Projects</span>
-          <image src="./assets/images/arrowright.png" class="right-arrow-icon"/>
-        </a>
+      <div>{{ page.sections[0] | textilize }}</div>
     </div>
   </div>
-  
+
   <!-- ABOUT SECTION -->
   <div id="about-section">
-      <span class="subheader-text">About</span>
     <div class="about-section-content">
-      <div>
-        Julie received her doctoral degree in theoretical linguistics from  the University of Toronto in 2015.
-        Since then, she have worked as a post-doctoral researcher at the Hebrew University of Jerusalem, Georg-August University of Göttingen, and University of Tromsø.
-        She is now a post-doctoral fellow in a DFG-funded project <a  target='_blank' rel="noopener noreferrer" href="https://uni-goettingen.de/de/vorschau_3dd0fb16351b3f7ffbd9a226d14b3a9b/652812.html">Action Sensitivity in Grammar</a> at the Georg-August University in Göttingen.
-      </div>
-  <div id="about-section">
-    <span class="subheader-text">Full CV</span>
-    <div class="about-section-content">
-      <div>
-        Julie's full CV can be found <a target='_blank' rel="noopener noreferrer" href="./assets/docs/Goncharov_cv_022023.pdf">here</a> (updated Februeary 2023).
-      </div>
-      <a  target='_blank' rel="noopener noreferrer" href="https://spe-uca.sciencesconf.org/resource/page/id/10" id="my-publication-link">
-        <span>See Julie's interview to OASIS3 (2023)</span>
-        <image src="./assets/images/arrowright.png" class="right-arrow-icon"/>
-      </a>
+       <span class="pubtitle">About</span>
+        <span>{{ page.sections[1] | textilize }}</span>
+        <span class="pubtitle">Full CV</span>
+              <span>{{ page.sections[2] | textilize }}</span>
+              <span>{{ page.sections[3] | textilize }}</span>
+        <span class="pubtitle">Recent Projects</span>
+        <table class="proj-card" cellspacing="0" cellpadding="0">
+            <tbody>
+                {% assign projects = site.projects | sort: 'num' | reverse %}
+                {% for proj in projects limit: 3 %}
+                <tr>
+                    <td class="proj-left" align="center" valign="top">
+                     <a href="{{ "/" | relative_url }}/projects" title="My Projects">
+                        <span class="proj-logo">
+                            <img src="{{ "/" | relative_url }}/assets/images/{{ proj.logo }}" class="project-image" />
+                        </span>
+                        {{ proj.short }}
+                     </a>
+                    </td>
+                    <td class="proj-right">
+                        <div class="proj-card-title">{{ proj.title }}</div>
+                        <div class="proj-card-text">{{ proj.excerpt }}</div>
+                       <a target='_blank' href="{{ proj.ref }}" title="Show Project">
+                              [WEBSITE]
+                       </a>
+                    </td>
+                </tr>
+                {% endfor %}
+             </tbody>
+        </table>
     </div>
   </div>
-  <span class="subheader-text">Recent Projects</span>
-  <table class="proj-card" cellspacing="0" cellpadding="0">
-      <tbody>
-          {% assign projects = site.projects | sort: 'num' | reverse %}
-          {% for proj in projects limit: 3 %}
-          <tr>
-              <td class="proj-left" align="center" valign="top">
-               <a href="{{ "/" | relative_url }}/projects" title="My Projects">
-                  <span class="proj-logo">
-                      <img src="{{ "/" | relative_url }}/assets/images/{{ proj.logo }}" class="project-image" />
-                  </span>
-                  {{ proj.short }}
-               </a>
-              </td>
-              <td class="proj-right">
-                  <div class="proj-card-title">{{ proj.title }}</div>
-                  <div class="proj-card-text">{{ proj.excerpt }}</div>
-              </td>
-          </tr>
-          {% endfor %}
-       </tbody>
-  </table>
-
-</div>

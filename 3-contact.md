@@ -5,11 +5,13 @@ permalink: /contact/
 ---
 
 <h1>Contact me</h1>
-<h2>Office</h2>
+<div class="pubtitle">
+Office
+</div>
 Nikolausberger Weg 23, room 2.106
 
 37073 Göttingen
 
-<h2>Email</h2>
+<div class="pubtitle">Email</div>
 julie dot goncharov at uni-goettingen dot de
 

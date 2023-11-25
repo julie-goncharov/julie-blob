@@ -10,7 +10,7 @@ usebibtex: true
 
 <bibtex src="{{ "/" | relative_url }}assets/docs/mybibliography.bib"></bibtex>
 -->
-<h1 class="mt-4">Publications</h1>
+<h1>Publications</h1>
 
 <div class="bibtex_structure">
   <div class="sort year" extra="DESC number">

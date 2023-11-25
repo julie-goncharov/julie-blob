@@ -4,6 +4,7 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  margin-bottom: 1.25em;
 }
 
 #portfolio-header-image-container {
@@ -38,7 +39,7 @@
 .about-section-content {
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 14px;
 }
 .subheader-text {
   font-size: 20px;

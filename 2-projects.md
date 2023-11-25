@@ -1,12 +1,14 @@
 ---
-layout: default
+layout: projects
 title: Projects
 permalink: /projects/
 ---
+There are projects I participate.
 
-<h1 class="mt-4">Projects</h1>
+<!--
+<h1 class="mt-4">Projects</h1>-->
 <!--<table class="project" cellspacing="0" cellpadding="0">-->
-{% assign projects = site.projects | sort: 'num' | reverse %}
+<!--{% assign projects = site.projects | sort: 'num' | reverse %}
 {% for proj in projects %}
   <table class="proj-card" cellspacing="0" cellpadding="0">
     <tbody>
@@ -19,27 +21,27 @@ permalink: /projects/
                 {{ proj.short }}
              </a>
             </td>
-            <td class="proj-right">
+            <td class="proj-right"> -->
 <!--                <div class="alignright">
                     <a class="button" target='_blank' href="{{ proj.ref }}" title="Show Project">
                         <img style="width: 20px; height: 20px; border: none;" src="{{ "/" | relative_url }}assets/images/arrowright.png" />
                     </a>
                 </div>
 -->
-                {{ proj.period }}
+<!--                {{ proj.period }}
                 <div class="proj-title">{{ proj.title }}</div>
                    <div>{{ proj.excerpt }}</div>
              <a target='_blank' href="{{ proj.ref }}" title="Show Project">
                     [WEBSITE]
              </a>
            </td>
-        </tr>
+        </tr> -->
 <!--        <tr>
             <td colspan=2 class="proj-colspan">
                 {{ proj.excerpt }}
              </td>
         </tr>
 -->
-    </tbody>
+<!--    </tbody>
 </table>
-{% endfor %}
+{% endfor %} -->

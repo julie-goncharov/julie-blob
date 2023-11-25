@@ -1,17 +1,31 @@
 ---
 layout: default
-title: Projects
+#title: Projects
 ---
-
-<div class="page">
-  <h1 class="mt-4 publication-title">{{ page.title }}</h1>
-  <div class="publication-authors">{{ page.authors }}</div>
-  <div class="publication-info">{{ page.publication }}, {{ page.year}}</div>
-  <div class="publication-teaser">
-    <img
-      src="{{ "/" | relative_url }}/assets/images/{{ page.logo }}"
-      alt="project teaser"
-    />
-  </div>
-  {{ content }}
-</div>
+<h1>Projects</h1>
+{{ content}}
+{% assign projects = site.projects | sort: 'num' | reverse %}
+{% for proj in projects %}
+  <table class="proj-card" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td class="proj-left" align="center" valign="top">
+             <a target='_blank' href="{{ proj.ref }}" title="Show Project">
+                <span class="proj-logo">
+                    <img src="{{ "/" | relative_url }}/assets/images/{{ proj.logo }}" class="project-image" />
+                </span>
+                {{ proj.short }}
+             </a>
+            </td>
+            <td class="proj-right">
+                {{ proj.period }}
+                <div class="proj-title">{{ proj.title }}</div>
+                   <div>{{ proj.excerpt }}</div>
+             <a target='_blank' href="{{ proj.ref }}" title="Show Project">
+                    [WEBSITE]
+             </a>
+           </td>
+        </tr>
+    </tbody>
+</table>
+{% endfor %}
