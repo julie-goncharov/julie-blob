@@ -1,4 +1,4 @@
-# Julie-blob		
+# How-To build Julie-blob with Jekyll and BibTex-js		
 from the scratch		
 1. Install ASDF ( https://asdf-vm.com/guide/getting-started.html )		
 git clone https://github.com/excid3/asdf.git ~/.asdf		
