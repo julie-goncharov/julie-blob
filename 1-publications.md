@@ -24,7 +24,6 @@ usebibtex: true
     <div class="pubitem">
       <div class="pubtitle">
           <span class="if year"><span class="year"></span></span>
-          ,
           <span class="if title"><span class="title"></span></span>
       </div>
       <div class="pubauthors">

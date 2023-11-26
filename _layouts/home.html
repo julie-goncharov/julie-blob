@@ -16,12 +16,14 @@ layout: default
   <!-- ABOUT SECTION -->
   <div id="about-section">
     <div class="about-section-content">
-       <span class="pubtitle">About</span>
+<!--       <h2>About</h2>
         <span>{{ page.sections[1] | textilize }}</span>
-        <span class="pubtitle">Full CV</span>
+        <h2>Full CV</h2>
               <span>{{ page.sections[2] | textilize }}</span>
               <span>{{ page.sections[3] | textilize }}</span>
-        <span class="pubtitle">Recent Projects</span>
+-->
+                  {{ content }}
+        <h2>Recent Projects</h2>
         <table class="proj-card" cellspacing="0" cellpadding="0">
             <tbody>
                 {% assign projects = site.projects | sort: 'num' | reverse %}
