@@ -16,7 +16,6 @@ sections:
         <span>See Julie's interview to OASIS3 (2023)</span>
       </a>
 ---
-
 ## About
 
 Julie received her doctoral degree in theoretical linguistics from  the University of Toronto in 2015.

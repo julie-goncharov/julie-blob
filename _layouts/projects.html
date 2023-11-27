@@ -6,6 +6,7 @@ layout: default
 {{ content}}
 {% assign projects = site.projects | sort: 'num' | reverse %}
 {% for proj in projects %}
+<div>
   <table class="proj-card" cellspacing="0" cellpadding="0">
     <tbody>
         <tr>
@@ -19,7 +20,7 @@ layout: default
             </td>
             <td class="proj-right">
                 {{ proj.period }}
-                <div class="proj-title">{{ proj.title }}</div>
+                <h2>{{ proj.title }}</h2>
                    <div>{{ proj.excerpt }}</div>
              <a target='_blank' href="{{ proj.ref }}" title="Show Project">
                     [WEBSITE]
@@ -28,4 +29,5 @@ layout: default
         </tr>
     </tbody>
 </table>
+</div>
 {% endfor %}

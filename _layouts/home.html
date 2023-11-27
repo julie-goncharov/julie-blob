@@ -14,8 +14,10 @@ layout: default
   </div>
 
   <!-- ABOUT SECTION -->
-  <div id="about-section">
+<!--  <div id="about-section">
     <div class="about-section-content">
+-->
+<div>
 <!--       <h2>About</h2>
         <span>{{ page.sections[1] | textilize }}</span>
         <h2>Full CV</h2>
@@ -30,15 +32,15 @@ layout: default
                 {% for proj in projects limit: 3 %}
                 <tr>
                     <td class="proj-left" align="center" valign="top">
-                     <a href="{{ "/" | relative_url }}/projects" title="My Projects">
+                     <a href="{{ '/' | relative_url }}/projects" title="My Projects">
                         <span class="proj-logo">
-                            <img src="{{ "/" | relative_url }}/assets/images/{{ proj.logo }}" class="project-image" />
+                            <img src="{{ '/' | relative_url }}/assets/images/{{ proj.logo }}" />
                         </span>
                         {{ proj.short }}
                      </a>
                     </td>
                     <td class="proj-right">
-                        <div class="proj-card-title">{{ proj.title }}</div>
+                        <h2>{{ proj.title }}</h2>
                         <div class="proj-card-text">{{ proj.excerpt }}</div>
                        <a target='_blank' href="{{ proj.ref }}" title="Show Project">
                               [WEBSITE]
@@ -48,5 +50,5 @@ layout: default
                 {% endfor %}
              </tbody>
         </table>
-    </div>
+<!--    </div> -->
   </div>
