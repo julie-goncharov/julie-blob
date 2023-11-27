@@ -50,37 +50,4 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name
-#scholar:
-#  style: assets/bibliography/mycslfile.csl
-#  locale: en
-
-#  sort_by: year
-#  order: descending
-
-#  source: _bibliography
-#  bibliography: references
-#  bibliography_template: bibtemplate
-
-#  replace_strings: true
-
-#  details_dir:    bibliography
-#  details_layout: bibtex.html
-#  details_link:   Details
-
-#  query: "@*"
-
-# Pandoc
-#markdown: Pandoc
-#    mathjax:true
-
-#pandoc:
-#  extensions:
-#    - filter: mermaid-filter
-#    - filter: mathjax-pandoc-filter
-#    - '-Mmathjax.centerDisplayMath' # center display math
-#    - normalize
-#    - smart
-#    - mathjax
-#    - csl: _styles/apa.csl
-#    - bibliography: bibliography/references.bib
     
