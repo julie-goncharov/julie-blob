@@ -23,13 +23,17 @@ usebibtex: true
       </div>
       <div class="pubauthors">
           <span class="author"></span>
-          ,
           <span class="if journal"><em><span class="journal"></span></em>,</span>
-          <span class="if publisher"><em><span class="publisher"></span></em>,</span>
           <span class="if booktitle">In <em><span class="booktitle"></span></em>,</span>
-          <span class="if address"><span class="address"></span>,</span>
-          <span class="if month"><span class="month"></span>,</span>
-          <span class="if year"><span class="year"></span>.</span>
+          <span class="if series">In <em><span class="series"></span></em>,</span>
+          <span class="if volume">volume <span class="volume"></span>,</span>
+          <span class="if number">number <span class="number"></span>,</span>
+          <span class="if pages"><span class="pages"></span></span>
+          <span class="if address"><span class="address"></span>:</span>
+          <span class="if publisher"><span class="publisher"></span></span>
+          <!--<span class="if address"><span class="address"></span>,</span>-->
+          <!--<span class="if month"><span class="month"></span>,</span>-->
+          <!--<span class="if year"><span class="year"></span>.</span>-->
          <span class="if note">
             <a class="bibtexVar" href="{{ '/' | relative_url }}assets/docs/+NOTE+" extra="note" target='_blank' rel="noopener noreferrer">
               [PDF]
